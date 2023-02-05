@@ -77,11 +77,7 @@ let num = Number(prompt('Введите число'));
  let sotni;
  let dec;
  let edinic;
- if (num / 100 >= 10) {
-   sotni = (num%1000/100);
- } else {
-    sotni = (num / 100);
- }
+ sotni = (num%1000/100);
  dec = (sotni*10%10);
  edinic = Math.round(dec*10%10);
  sotni = Math.trunc(sotni);
